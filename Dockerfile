@@ -31,4 +31,5 @@ RUN npm install --production; npm cache clean
 # -----------------------------------------------------------------------------
 EXPOSE 8080
 VOLUME /opt/scripts
-CMD ["/opt/bin/hubot", "--name ${HUBOT_NAME}", "--adapter slack"]
+
+CMD ["/opt/bin/hubot", "--name", "${HUBOT_NAME}", "--adapter", "slack"]
